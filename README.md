@@ -50,7 +50,7 @@ private Long age;
     show-sql: true
 
 ####查询
->#####通过RESTful类型定义
+#####通过RESTful类型定义
 ```
 // 查询全部
 GetMapping(value = "/girls")
@@ -59,6 +59,7 @@ GetMapping(value = "/girls")
 }
 
 ```
+
 ```
 // 查询指定
 @GetMapping(value= "/girls/{id}")
