@@ -1,0 +1,8 @@
+server:
+  # 服务端口号
+  port: 8082
+  # 服务起始根路径
+  # context-path: /demo
+girl:
+  cupSize: F
+  age: 20

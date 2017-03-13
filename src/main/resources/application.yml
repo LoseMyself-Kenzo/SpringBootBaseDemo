@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sakila
+    username: root
+    password: 950220
+  jpa:
+    hibernate:
+    # create每次跑的时候会创建一个空的表,会删除之前的表
+    # update回创建一个表,但是更新的时候不会删除之前的信息
+    # create-drop结束时会删除对应表
+    # validate验证跟数据库的字段是否一致
+    # none 默认什么都不做
+      ddl-auto: update
+    show-sql: true
